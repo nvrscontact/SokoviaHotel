@@ -1,0 +1,287 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-family:inter;
+      color:rgba(255,255,255,0.7);
+
+}
+
+summary, ul li{
+  list-style: none;
+
+  a{
+    text-decoration: none;
+  }
+}
+/* ---------- NAVBAR (C) ---------- */ 
+.navbar{
+  background-color: rgba(0,0,0,0.7);
+  padding: 10px 0;
+  padding-left: 10px;
+  position:fixed;
+  z-index:2;
+  left:0;
+  right:0;
+  
+  img{
+    height:30px;
+  }
+  
+  .submenu, #casilla{
+    display:none;
+  }
+  #casilla:checked + label + .submenu{
+    display:flex;
+    backdrop-filter:blur(2rem);
+    position:absolute;
+    left:0;
+    right:0;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+  }
+  .submenu ul{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    gap:30px;
+    padding:25px;
+
+    li{
+      padding-bottom: 15px;
+      border-bottom:1px solid rgba(255, 255, 255, 0.3);
+      
+      a{
+        display:flex;
+      }
+    }
+  }
+
+}
+/* ---------- HERO (C) ---------- */ 
+.hero{
+  position:relative;
+  display:flex;
+  flex-direction: column;
+
+  video{
+    width: 100%;
+    filter: brightness(0.7)
+  }
+
+  header{
+    position:absolute;
+    top:12%;
+    left:8%;
+    font-weight:300;
+
+    color:rgba(255,255,255,0.7);
+
+    section{
+      margin-top: 3px;
+      display:flex;
+      gap:10px;
+      align-items: center;
+      font-size: 14px;
+    }
+    img{
+      height:20px;
+    }
+  }
+
+  footer{
+    position: absolute;
+    font-weight: 200;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    left:12%;
+    bottom:12%;
+
+    img{
+      height:16px;
+    }
+
+    ul{
+      display:flex;
+      flex-direction: column;
+      gap:10px;
+      
+      li:nth-child(1) a{
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      li:nth-child(2) a{
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      li:nth-child(3) a{
+        font-size: 1.2rem;
+      }
+    } 
+
+
+  }
+
+  
+  aside{
+    background-color: #010101;
+      color:white;
+      padding:10px;
+      font-size: 12px;
+      text-align: center;
+    }
+}
+
+/* ---------- HOMEPAGE (P) ---------- */ 
+.homePage{
+
+  display:flex;
+  flex-direction: column;
+  
+  h1,h2,span{
+    color:rgba(0,0,0,0.7);
+  }
+
+  .information {
+    margin:30px 20px;
+    display:flex;
+    flex-direction: column;
+
+  }
+
+  div{
+    margin:30px 20px;
+    display:flex;
+    flex-direction: column;
+    text-align: end;
+
+    span{
+      font-size: 14px;
+    }
+    
+
+  }
+
+
+  iframe{
+    height: 300px;
+  }
+}
+
+/* ---------- FOOTER (C) ---------- */ 
+
+.footer{
+  margin-top: 150px;
+  padding:20px;
+  background-color: #1f1f1f;
+
+  header{
+    display:flex;
+    gap:15px;
+    
+    img{
+      height:20px;
+    }
+  }
+
+  details{
+    
+    ul{
+      margin-top: 20px;
+      display:flex;
+      flex-direction: column;
+      gap:15px;
+    }
+
+    summary{
+      display:flex;
+      justify-content: space-between;
+    }
+
+  }
+  section{
+    padding: 40px 0;
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+  }
+
+  p{
+    font-size: 12px;
+  }
+}
+footer + section{
+  background-color: black;
+  
+  ul{
+    display:flex;
+    font-size: 12px;
+    justify-content: center;
+    gap:15px;
+    padding:10px 0;
+  }
+  
+}
+
+/* ---------- REVIEW (SC) ---------- */ 
+
+.review{
+  * {
+  color:rgba(0,0,0,0.7);
+  }
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+
+  border:1px solid rgba(0,0,0,0.4);
+  width:fit-content;
+
+  header{
+    padding: 10px;
+    width:fit-content;
+    display:flex;
+    flex-direction: column;
+  
+    
+    div{
+      display:flex;
+      gap:5px;
+      align-items: end;
+      margin-bottom: 2px;
+    }
+
+    h1{
+      font-size: 16px;
+    }
+    
+    img{
+      height:14px;
+    }
+  }
+
+  span{
+    font-size: 11px;
+    letter-spacing:-0.4px;
+  }
+  p{
+    background-color: rgba(137, 89, 0, 0.8);
+    border-radius: 8px;
+    font-size: 10px;
+    color:white;
+    padding:12px;
+    margin:3px;
+  }
+
+  
+
+}
+
+/* ---------- REVIEWS (C) ---------- */ 
+
+.reviews{
+  margin:20px;
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+}
