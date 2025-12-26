@@ -96,7 +96,7 @@ summary, ul li{
     display:flex;
     flex-direction: column;
     gap:10px;
-    left:12%;
+    left:8%;
     bottom:12%;
 
     img{
@@ -129,7 +129,7 @@ summary, ul li{
     background-color: #010101;
       color:white;
       padding:10px;
-      font-size: 12px;
+      font-size: 10px;
       text-align: center;
     }
 }
@@ -173,7 +173,6 @@ summary, ul li{
 /* ---------- FOOTER (C) ---------- */ 
 
 .footer{
-  margin-top: 150px;
   padding:20px;
   background-color: #1f1f1f;
 
@@ -182,11 +181,12 @@ summary, ul li{
     gap:15px;
     
     img{
-      height:20px;
+      height:16px;
     }
   }
 
   details{
+    font-size: 12px;
     
     ul{
       margin-top: 20px;
@@ -194,22 +194,24 @@ summary, ul li{
       flex-direction: column;
       gap:15px;
     }
-
+    
     summary{
+      font-size: 12px;
       display:flex;
       justify-content: space-between;
     }
 
+    
   }
   section{
-    padding: 40px 0;
     display:flex;
     flex-direction: column;
     gap:25px;
+    padding: 40px 0;
   }
-
+  
   p{
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 footer + section{
@@ -217,7 +219,7 @@ footer + section{
   
   ul{
     display:flex;
-    font-size: 12px;
+    font-size: 10px;
     justify-content: center;
     gap:15px;
     padding:10px 0;
