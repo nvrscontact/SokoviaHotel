@@ -7,6 +7,7 @@
 
 a {
   color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
 }
 
 summary,
@@ -62,16 +63,23 @@ ul li {
     flex-direction: column;
     width: 100%;
     gap: 30px;
-    padding: 0 20px;
+    padding: 0 30px;
     padding-top: 30px;
     padding-bottom: 46px;
 
     li {
+      display:flex;
+      justify-content: space-between;
       padding-bottom: 15px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      font-size: 18px;
+      font-weight: 700;
 
       a {
         display: flex;
+      }
+
+      img{
+        height:14px;
       }
     }
   }
@@ -293,7 +301,7 @@ footer+section {
     }
 
     h1 {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     img {
@@ -302,14 +310,14 @@ footer+section {
   }
 
   span {
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: -0.4px;
   }
 
   p {
     background-color: rgba(137, 89, 0, 0.8);
     border-radius: 8px;
-    font-size: 10px;
+    font-size: 12px;
     color: white;
     padding: 12px;
     margin: 4px;
@@ -336,21 +344,92 @@ footer+section {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: black;
 
-  p{
-    font-size:12px;
+  h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+    color: rgba(137, 89, 0, 0.7);
+
   }
 
   img {
     width: 100vw;
-    height: 600px;
+    height: 450px;
+  }
+
+  .img_container{
+    margin-bottom: 10px;
+  }
+
+  section {
+    position: relative;
+    color: white;
+
+    a {
+      color: white;
+    }
+
+    p {
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 12px;
+      padding: 20px;
+      bottom: 1%;
+      position: absolute;
+    }
+
+    button {
+      border:none;
+      border-bottom: 4px solid rgb(108, 70, 1);
+      background-color: rgba(137, 89, 0, 0.7);
+      padding: 16px 50px;
+      border-radius: 4px;
+      font-size: 16px;
+
+    }
+
+  }
+
+}
+
+.articles_hero .buttons {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.articles_homepage {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 100px 0;
+}
+
+
+/** features **/
+
+.features{
+
+  display: flex;
+  gap:5px;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  div{
+    border:1px solid rgba(137, 89, 0, 0.7);
+    border-radius: 8px;
+    display:flex;
+    gap:6px;
+    align-items: center;
+    padding:4px 8px;
+  }
+  span{ 
+    font-size: 14px;
+    color:rgba(137, 89, 0, 1);
+  }
+  img{
+    height:18px;
+    width: 18px;
   }
 }
 
-.articles_homepage{
-  display:flex;
-  flex-direction: column;
-  gap:100px;
-  margin: 100px 0;
-}
