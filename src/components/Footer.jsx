@@ -17,7 +17,7 @@ function Footer() {
       <section>
         
         <details>
-          <summary>Contact <span>+</span></summary>
+          <summary>Contact <img src="/icons/arrowDown.svg" alt=""/> </summary>
           <ul>
             <li>
               <Link to="">Uno</Link>
@@ -34,7 +34,7 @@ function Footer() {
           </ul>
         </details>
         <details>
-          <summary>Information <span>+</span></summary>
+          <summary>Information <img src="/icons/arrowDown.svg" alt=""/> </summary>
           <ul>
             <li>
               <Link to="">Uno</Link>
@@ -51,7 +51,7 @@ function Footer() {
           </ul>
         </details>
         <details>
-          <summary>Legal <span>+</span></summary>
+          <summary>Legal <img src="/icons/arrowDown.svg" alt=""/> </summary>
           <ul>
             <li>
               <Link to="">Uno</Link>
@@ -68,7 +68,7 @@ function Footer() {
           </ul>
         </details>
         <details>
-          <summary>Press <span>+</span></summary>
+          <summary>Press <img src="/icons/arrowDown.svg" alt=""/> </summary>
           <ul>
             <li>
               <Link to="">Uno</Link>
@@ -85,7 +85,7 @@ function Footer() {
           </ul>
         </details>
         <details>
-          <summary>Carreers <span>+</span></summary>
+          <summary>Carreers <img src="/icons/arrowDown.svg" alt=""/> </summary>
           <ul>
             <li>
               <Link to="">Uno</Link>

@@ -17,7 +17,7 @@ function Review({names,star1,star2,star3,star4,star5,date,paragraph,area}) {
               </section>
 
           </div>
-            <span>{date} • {area}</span>
+            <span>{date} • Account Verified</span>
         </header>
             
 
