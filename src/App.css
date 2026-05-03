@@ -20,6 +20,9 @@ ul li {
 }
 
 
+body {
+  margin-top: 52px;
+}
 
 
 
@@ -27,13 +30,15 @@ ul li {
 
 /* ---------- NAVBAR (C) ---------- */
 .navbar {
-  background-color: black;
+  background-color: rgb(41, 29, 8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding: 10px 0;
   padding-left: 10px;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   left: 0;
   right: 0;
+  top: 0;
 
 
 
@@ -68,22 +73,54 @@ ul li {
     padding-bottom: 46px;
 
     li {
-      display:flex;
+      display: flex;
       justify-content: space-between;
       padding-bottom: 15px;
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 200;
 
       a {
         display: flex;
       }
 
-      img{
-        height:14px;
+      img {
+        height: 14px;
       }
     }
   }
 
+}
+
+/* MODAL BOTTOM */
+
+.modal_navbar {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgb(41, 29, 8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 0;
+  padding-left: 10px;
+  position: fixed;
+  z-index: 6;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    a {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  img {
+    height: 22px;
+    margin-bottom: 6px;
+  }
 }
 
 /* ---------- HERO (C) ---------- */
@@ -94,12 +131,15 @@ ul li {
 
   video {
     width: 100%;
-    filter: brightness(0.7)
+    height: 78vh;
+    filter: brightness(0.8);
+    object-fit: cover;
+    /* so that(para que...) width conserve it and we able to adjust the height without blank spaces */
   }
 
   header {
     position: absolute;
-    top: 12%;
+    top: 6%;
     left: 8%;
     font-weight: 300;
 
@@ -125,11 +165,7 @@ ul li {
     flex-direction: column;
     gap: 10px;
     left: 8%;
-    bottom: 12%;
-
-    img {
-      height: 16px;
-    }
+    bottom: 14%;
 
     ul {
       display: flex;
@@ -137,17 +173,17 @@ ul li {
       gap: 10px;
 
       li:nth-child(1) a {
-        font-size: 2rem;
+        font-size: 2.4rem;
         font-weight: 700;
       }
 
       li:nth-child(2) a {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 400;
       }
 
       li:nth-child(3) a {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
       }
     }
 
@@ -156,11 +192,16 @@ ul li {
 
 
   aside {
-    background-color: #010101;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgb(27, 19, 4);
     color: white;
     padding: 10px;
     font-size: 10px;
     text-align: center;
+
+    p {
+      font-size: 12px;
+    }
   }
 }
 
@@ -207,7 +248,8 @@ ul li {
 .footer {
   color: rgba(255, 255, 255, 0.7);
   padding: 20px;
-  background-color: #1f1f1f;
+  background-color: rgb(41, 29, 8);
+  font-weight: 200;
 
   header {
     display: flex;
@@ -219,7 +261,7 @@ ul li {
   }
 
   details {
-    font-size: 12px;
+    font-size: 14px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 10px;
 
@@ -231,7 +273,7 @@ ul li {
     }
 
     summary {
-      font-size: 12px;
+      font-size: 14px;
       display: flex;
       justify-content: space-between;
     }
@@ -251,20 +293,23 @@ ul li {
   }
 
   p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
 footer+section {
-  background-color: black;
+  background-color: rgb(27, 19, 4);
+
 
   ul {
     display: flex;
-    font-size: 10px;
+    font-size: 12px;
     justify-content: center;
     gap: 15px;
-    padding: 10px 0;
+    padding: 14px 0;
   }
+
+  margin-bottom: 64px;
 
 }
 
@@ -344,6 +389,7 @@ footer+section {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 90vw;
 
   h1 {
     font-size: 40px;
@@ -353,11 +399,11 @@ footer+section {
   }
 
   img {
-    width: 100vw;
     height: 450px;
+    width: 100%;
   }
 
-  .img_container{
+  .img_container {
     margin-bottom: 10px;
   }
 
@@ -378,8 +424,7 @@ footer+section {
     }
 
     button {
-      border:none;
-      border-bottom: 4px solid rgb(108, 70, 1);
+      border: none;
       background-color: rgba(137, 89, 0, 0.7);
       padding: 16px 50px;
       border-radius: 4px;
@@ -401,35 +446,37 @@ footer+section {
 .articles_homepage {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 100px;
-  margin: 100px 0;
+  margin: 100px 0px;
 }
 
 
 /** features **/
 
-.features{
+.features {
 
   display: flex;
-  gap:5px;
+  gap: 5px;
   justify-content: center;
   margin-bottom: 10px;
 
-  div{
-    border:1px solid rgba(137, 89, 0, 0.7);
+  div {
+    border: 1px solid rgba(137, 89, 0, 0.7);
     border-radius: 8px;
-    display:flex;
-    gap:6px;
+    display: flex;
+    gap: 6px;
     align-items: center;
-    padding:4px 8px;
+    padding: 4px 8px;
   }
-  span{ 
+
+  span {
     font-size: 14px;
-    color:rgba(137, 89, 0, 1);
+    color: rgba(137, 89, 0, 1);
   }
-  img{
-    height:18px;
+
+  img {
+    height: 18px;
     width: 18px;
   }
 }
-

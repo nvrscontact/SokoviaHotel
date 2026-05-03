@@ -26,19 +26,21 @@ function Hero() {
                 <footer>
                     <ul>
                         <li>
-                            <Link to="">Hotel <img src="/icons/arrowUpRight.svg" alt="" /></Link>
+                            <Link to="/hotel">Hotel <img src="/icons/arrowUpRight.svg" alt="" /></Link>
                         </li>
                         <li>
-                            <Link to="">Resort <img src="/icons/arrowUpRight.svg" alt="" /></Link>
+                            <Link to="/resort">Resort <img src="/icons/arrowUpRight.svg" alt="" /></Link>
                         </li>
                         <li>
-                            <Link to="">Restaurant <img src="/icons/arrowUpRight.svg" alt="" /></Link>
+                            <Link to="/restaurant">Restaurant <img src="/icons/arrowUpRight.svg" alt="" /></Link>
                         </li>
                     </ul>
                 </footer>
+                
                 <aside>
-                    <h3>December is there a 10% discount in Bar</h3>
+                    <p>December 10% discount in Bar and Resort</p>
                 </aside>
+                    
             </main>
         </>
     )

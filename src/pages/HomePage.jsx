@@ -9,11 +9,11 @@ function HomePage() {
   return (
     <>
 
-      <Hero/>
+      <Hero />
       <section className='articles_homepage'>
-      <HotelPreview/>
-      <ResortPreview/>
-      <RestaurantPreview/>
+        <HotelPreview />
+        <ResortPreview />
+        <RestaurantPreview />
       </section>
 
       <Reviews />

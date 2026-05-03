@@ -25,17 +25,16 @@ function Navbar() {
 
           </li>
           <li>
-            <Link to="asd">Help</Link>
+            <Link to="asd">Support</Link>
             <img src="/icons/lateral_arrow.svg" alt="" />
 
           </li>
           <li>
             <Link to="asd">Reservations</Link>
             <img src="/icons/lateral_arrow.svg" alt="" />
-
           </li>
           <li>
-            <Link to="/">Home Page</Link>
+            <Link to="/">Home</Link>
             <img src="/icons/lateral_arrow.svg" alt="" />
 
           </li>
